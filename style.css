@@ -1,0 +1,76 @@
+@font-face {
+    font-family:BODY;
+    src: url(./Assets/Cal_Sans/CalSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:HEADER;
+    src: url(./Assets/Sekuya/Sekuya-Regular.ttf) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    display: inline-block;
+    border: none ;
+
+   
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+    display: inline;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+ul li a{
+    text-decoration: none;
+    color: #cfeafa;
+    padding:20px 40px;
+    display: inline-block;
+    font-size: 20px;
+}
+body{
+    background: #020024;
+background: linear-gradient(179deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 66%, rgba(0, 212, 255, 1) 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: BODY;
+}
+ul li a:hover{
+    color: hsl(216, 54%, 21%);
+    background-color: #c8e2ff;
+    transition: 0.5s all ease-in-out;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@supports (animation-timeline: scroll()) {
+  #container{
+    background-color: transparent;
+    animation: navbar-bg linear both;
+    animation-timeline: scroll();
+    animation-range: 0 80px;
+  }
+
+  @keyframes navbar-bg {
+    to {
+      background-color: #0b1140;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+} 
+
+p{
+    color: #c8e2ff;
+    font-family: HEADER;
+    font-size: 40px;
+}
