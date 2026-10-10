@@ -142,3 +142,12 @@ ul li a:hover{
 #intro{
     background-color:rgba(181, 207, 252, 0.317);
 }
+.fa-brands{
+    color: #c8e2ff;
+    font-size:40px;
+    border: 2px solid #c8e2ff;
+}
+#links{
+    display: flex;
+    align-items: center;
+}
