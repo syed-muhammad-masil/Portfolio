@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
 @font-face {
     font-family:BODY;
     src: url(./Assets/Cal_Sans/CalSans-Regular.ttf) format('truetype');
@@ -17,11 +21,12 @@ ul li{
 
    
 }
-.logo{
-    width: 200px;
-    height: 100px;
-    margin-right: 10px;
+#logo{
+    
+    margin: 30px;
     display: inline;
+    color: lab(67.86% -0.54 -28.33);
+    font-size: 30px;
 }
 #container{
     display: flex;
@@ -71,14 +76,18 @@ ul li a:hover{
 
 #para{
     color: #c8e2ff;
-    font-family:HEAD;
     font-size: 60px;
     margin: 30px 50px;
+    font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100
    
 }
 #head{
     color: #c8e2ff;
-    font-family:HEAD;
+    font-family:BODY;
     font-size: 50px;
     margin: 40px 50px;
 }
@@ -143,11 +152,17 @@ ul li a:hover{
     background-color:rgba(181, 207, 252, 0.317);
 }
 .fa-brands{
-    color: #c8e2ff;
-    font-size:40px;
-    border: 2px solid #c8e2ff;
+    color: #000000;
+    font-size:50px;
+    border:none;
+    border-radius: 50%;
 }
 #links{
     display: flex;
     align-items: center;
+}
+.fa-brands:hover{
+    color: #1d1d39;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.1);
 }
