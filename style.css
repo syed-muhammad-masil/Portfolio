@@ -151,7 +151,7 @@ ul li a:hover{
 #intro{
     background-color:rgba(181, 207, 252, 0.317);
 }
-.fa-brands{
+.fa-brands,.fa-solid{
     color: #000000;
     font-size:50px;
     border:none;
@@ -161,7 +161,7 @@ ul li a:hover{
     display: flex;
     align-items: center;
 }
-.fa-brands:hover{
+.fa-brands:hover,.fa-solid:hover{
     color: #1d1d39;
     transition: 0.5s all ease-in-out;
     transform: scale(1.1);
