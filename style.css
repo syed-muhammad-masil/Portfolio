@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family:HEAD;
-    src: url(./Assets/Jost/Jost-VariableFont_wght.ttf) format('truetype');
+    src: url(./Assets/Jost/static/Jost-Regular.ttf) format('truetype');
 }
 *{
     margin: 0;
@@ -79,7 +79,7 @@ ul li a:hover{
 #head{
     color: #c8e2ff;
     font-family:HEAD;
-    font-size: 40px;
+    font-size: 50px;
     margin: 40px 50px;
 }
 .glow-on-hover {
@@ -138,4 +138,7 @@ ul li a:hover{
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+#intro{
+    background-color:rgba(181, 207, 252, 0.317);
 }
